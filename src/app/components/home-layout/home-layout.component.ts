@@ -7,7 +7,7 @@ interface MenuItem {
   name: string;
   icon: string;
   route?: string;
-  subMenu?: MenuItem[];
+  subMenu: MenuItem[];
   collapseId?: string;
 }
 
@@ -22,11 +22,11 @@ interface MenuItem {
 export class HomeLayoutComponent implements OnInit {
 
   public menuItems: MenuItem[] = [
-    { name: 'Home', icon: 'fas fa-home', route: '/home',subMenu: [], },
-    { name: 'Dashboard', icon: 'fas fa-tachometer-alt', collapseId: 'submenu1',subMenu: [],},
-    { name: 'Core', icon: 'fas fa-shopping-cart', route: '/orders',subMenu: [], },
-    {name: 'Foundation', icon: 'fas fa-layer-group',collapseId: 'submenu2',subMenu: [],},
-    {name: 'User-Management', icon: 'fas fa-layer-group',collapseId: 'submenu2',subMenu: [],},
+    { name: 'Home', icon: 'fas fa-home', route: '/home', subMenu: [], },
+    { name: 'Dashboard', icon: 'fas fa-tachometer-alt', collapseId: 'submenu1', subMenu: [], },
+    { name: 'Core', icon: 'fa fa-sitemap', route: '/core/cores', subMenu: [], },
+    { name: 'Foundation', icon: 'fa fa-institution',route:'/foundation/foundation', collapseId: 'submenu2', subMenu: [], },
+    { name: 'User-Management', icon: 'fa fa-user-circle',route:'/client/user-management',collapseId: 'submenu2', subMenu: [], },
   ];
 
   constructor(
@@ -40,8 +40,7 @@ export class HomeLayoutComponent implements OnInit {
   }
 
   public navigateTo(route: any) {
-    // this.route.navigate([route]);
-
+    this.route.navigate([route]);
   }
 
 

@@ -8,6 +8,7 @@ import { FeatureComponent } from './feature/feature.component';
 import { UsecaseComponent } from './usecase/usecase.component';
 import { TaskComponent } from './task/task.component';
 import { CoreLayoutComponent } from './core-layout/core-layout.component';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CoreLayoutComponent } from './core-layout/core-layout.component';
   ],
   imports: [
     CommonModule,
-    CoreRoutingModule
+    CoreRoutingModule,
+    MaterialModule
   ]
 })
 export class CoreModule { }

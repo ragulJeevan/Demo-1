@@ -6,6 +6,7 @@ import { DesignationComponent } from './designation/designation.component';
 import { DepartmentComponent } from './department/department.component';
 import { UserComponent } from './user/user.component';
 import { LayoutComponent } from './layout/layout.component';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { LayoutComponent } from './layout/layout.component';
   ],
   imports: [
     CommonModule,
-    ClientsRoutingModule
+    ClientsRoutingModule,
+    MaterialModule
   ]
 })
 export class ClientsModule { }

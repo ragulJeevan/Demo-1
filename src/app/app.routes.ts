@@ -14,7 +14,7 @@ export const routes: Routes = [
     },
     // CLIENTS MODULE 
     {
-        path: 'clients',
+        path: 'client',
         loadChildren: () => import('./clients/clients.module').then(m => m.ClientsModule)
     }
 ];

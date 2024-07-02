@@ -10,6 +10,7 @@ import { StageComponent } from './stage/stage.component';
 import { ComplexityComponent } from './complexity/complexity.component';
 import { PriorityComponent } from './priority/priority.component';
 import { FoundationLayoutComponent } from './foundation-layout/foundation-layout.component';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { FoundationLayoutComponent } from './foundation-layout/foundation-layout
   ],
   imports: [
     CommonModule,
-    FoundationRoutingModule
+    FoundationRoutingModule,
+    MaterialModule
   ]
 })
 export class FoundationModule { }
