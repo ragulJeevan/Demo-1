@@ -7,6 +7,7 @@ import { DepartmentComponent } from './components/department/department.componen
 import { UserComponent } from './components/user/user.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { MaterialModule } from '../material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     ClientsRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
   ]
 })
 export class ClientsModule { }

@@ -11,6 +11,8 @@ import { SdlcComponent } from './components/sdlc/sdlc.component';
 import { StageComponent } from './components/stage/stage.component';
 import { StatusComponent } from './components/status/status.component';
 import { TaskTypeComponent } from './components/task-type/task-type.component';
+import { SourceComponent } from './components/source/source.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,12 +24,14 @@ import { TaskTypeComponent } from './components/task-type/task-type.component';
     StageComponent,
     ComplexityComponent,
     PriorityComponent,
-    FoundationLayoutComponent
+    FoundationLayoutComponent,
+    SourceComponent
   ],
   imports: [
     CommonModule,
     FoundationRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
   ]
 })
 export class FoundationModule { }

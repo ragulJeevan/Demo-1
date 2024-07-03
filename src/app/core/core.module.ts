@@ -9,6 +9,7 @@ import { UsecaseComponent } from './components/usecase/usecase.component';
 import { TaskComponent } from './components/task/task.component';
 import { CoreLayoutComponent } from './components/core-layout/core-layout.component';
 import { MaterialModule } from '../material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     CoreRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
   ]
 })
 export class CoreModule { }
