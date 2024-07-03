@@ -14,3 +14,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding:0.5rem;
     font-size:13px;
 }
+
+.custom-style-error {
+    background-color:red;
+    color: #fff;
+}
+.custom-style-success {
+    background-color:green;
+    color: #fff;
+}
