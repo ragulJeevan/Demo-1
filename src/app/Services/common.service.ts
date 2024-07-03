@@ -30,7 +30,7 @@ export class CommonService {
     let style =
       res == 'success' ? 'custom-style-success' : 'custom-style-error';
     this.snackbar.open(arg, 'X', {
-      duration: 3000,
+      duration: 300000,
       verticalPosition: 'center' as MatSnackBarVerticalPosition,
       horizontalPosition: 'center',
       panelClass: [style],

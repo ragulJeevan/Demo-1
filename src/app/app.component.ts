@@ -27,6 +27,5 @@ export class AppComponent implements OnInit {
     this.commonService.getLoader.subscribe((loader:any)=>{
       this.isLoader = loader
     })
-  }
-
+  }  
 }
