@@ -1,1 +1,54 @@
-<p>feature works!</p>
+<!-- CONTAINER  -->
+<div>
+    <!-- BUTTON  -->
+     <div class="d-flex flex-row-reverse" >
+         <button (click)="openAddEditModal(add,'add','')" class="btn btn-dark">Add {{modelName}}</button>
+     </div>
+    <!-- CONTENT  -->
+     <div class="mt-2">
+        <div class="card">
+            <div class="card-body flex-center-space">
+                <!-- NAME  -->
+                <div class="flex-column row-5">
+                    <div class="fw-bold" >{{modelName}} Name</div>
+                    <div>Ai Plant 4.0</div>
+                </div>
+                <!-- DESCRIPTION  -->
+                <div class="flex-column row-5" >
+                    <div class="fw-bold" >{{modelName}} Description</div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+                </div>
+                <!-- EDIT  -->
+                <i class="fas fa-edit fwd-24" ></i>
+            </div>
+        </div>
+     </div>
+</div>
+
+
+<!-- MODAL  -->
+<ng-template #add let-modal>
+    <div class="modal-content">
+        <div class="modal-header bg-dark">
+            <div  class="fw-bold text-white">  {{isAdd ? 'Add' : 'Update' }} {{modelName}}</div>
+        </div>
+        <div class="modal-body">
+
+            <form [formGroup]="addEditForm">
+                <div class="form-row"> 
+                    <div class="form-group col-md-6 mt-2">
+                        <label class="required">{{modelName}} Name</label>
+                        <input type="text" formControlName="model_name" class="form-control" name="model_name"
+                            placeholder="Enter Name" required="">
+                    </div>
+                </div>
+            </form>
+           
+        </div>
+        <div class="modal-footer">
+            <button *ngIf="isAdd" class="btn btn-primary" >Add</button>
+            <button *ngIf="!isAdd" class="btn btn-primary">Update</button>
+            <button class="btn btn-outline--secondary" (click)="close()">Close</button>
+        </div>
+    </div>
+</ng-template>

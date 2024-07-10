@@ -43,11 +43,11 @@ export class ErrorInterceptorService {
           else {
             // BAD REQUEST ERROR 
             if (error instanceof HttpErrorResponse && error?.status === 400) {
-              errorMessage = error.error.errorMessage;
+              errorMessage = error.error.status_message;
             }
             // UNAUTHORIZED TOKEN ERROR 
             else if (error instanceof HttpErrorResponse && error.status === 401) {
-              errorMessage = error.error.errorMessage;
+              errorMessage = error.error.status_message;
             }
             // NOT FOUND ERROR
             else if (error instanceof HttpErrorResponse && error?.status === 404) {
@@ -55,11 +55,11 @@ export class ErrorInterceptorService {
             }
             // NOT ACCEPTABLE
             else if (error instanceof HttpErrorResponse && error?.status === 406) {
-              errorMessage = error.error.errorMessage;
+              errorMessage = error.error.status_message;
             }
             // SERVER ERROR 
             else if (error instanceof HttpErrorResponse && error?.status === 500) {
-              errorMessage = error.error.errorMessage;
+              errorMessage = error.error.status_message;
             }
             // API BEARER ERROR 
             else if (error instanceof HttpErrorResponse && error?.status === 0) {

@@ -11,20 +11,25 @@
 <!-- MODAL  -->
 <ng-template #add let-modal>
     <div class="modal-content">
-        <div class="modal-header bg-primary flex-center">
-            <div  class="fw-b fw-secondary">ADD DPARTMENT</div>
-            <!-- <div *ngIf="!isAdd" class="fw-b fw-secondary">UPDATE DPARTMENT</div> -->
+        <div class="modal-header bg-dark">
+            <div  class="fw-bold text-white">  {{isAdd ? 'Add' : 'Update' }} {{modelName}}</div>
         </div>
         <div class="modal-body">
 
-            <div class="card">
-                RAGUL
-            </div>
+            <form [formGroup]="addEditForm">
+                <div class="form-row"> 
+                    <div class="form-group col-md-6 mt-2">
+                        <label class="required">{{modelName}} Name</label>
+                        <input type="text" formControlName="model_name" class="form-control" name="model_name"
+                            placeholder="Enter Name" required="">
+                    </div>
+                </div>
+            </form>
            
         </div>
-        <div class="modal-footer flex-center">
-            <button  class="btn btn-primary" >Add</button>
-            <!-- <button *ngIf="!isAdd" class="btn btn-primary">Update</button> -->
+        <div class="modal-footer">
+            <button *ngIf="isAdd" class="btn btn-primary" >Add</button>
+            <button *ngIf="!isAdd" class="btn btn-primary">Update</button>
             <button class="btn btn-outline--secondary" (click)="close()">Close</button>
         </div>
     </div>

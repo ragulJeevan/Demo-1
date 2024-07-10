@@ -15,6 +15,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-size:13px;
 }
 
+.tab-padding{
+    padding:1rem;
+}
+
+.card-body{
+    background-color: aliceblue;
+    box-shadow: 0 2px 15px 0px #e0e0e0, 0 2px 1px -1px #fff7f7;
+}
+
 .custom-style-error {
     background-color:red;
     color: #fff;
@@ -22,4 +31,44 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .custom-style-success {
     background-color:green;
     color: #fff;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display:flex;
+    flex-direction: column;
+}
+.flex-center-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row-1{
+    row-gap: 1rem;
+}
+.row-5{
+    row-gap: .5rem;
+}
+.fwd-24{
+    font-size: 24px;
 }

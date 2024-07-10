@@ -2,7 +2,7 @@ import { Component, OnInit,OnDestroy } from '@angular/core';
 import { CommonService } from '../../../Services/common.service';
 import { FoundationService } from '../../Services/foundation.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
@@ -13,7 +13,8 @@ import { FormGroup } from '@angular/forms';
 export class StatusComponent implements OnInit,OnDestroy{
 
   public modelName = 'Status';
-  public addEditForm! : FormGroup
+  public addEditForm! : FormGroup;
+  public isAdd: boolean = true;
 
   constructor(
     private commonService : CommonService,
@@ -23,7 +24,9 @@ export class StatusComponent implements OnInit,OnDestroy{
   ){}
 
   ngOnInit(): void {
-    
+    this.addEditForm = new FormGroup({
+      model_name: new FormControl('', Validators.required),
+    })
   } 
   // 
   ngOnDestroy(): void {
