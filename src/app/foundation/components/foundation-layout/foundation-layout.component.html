@@ -1,5 +1,5 @@
 <div class="header" >
-    FOUNDATION
+    {{Headers?.header}}
 </div>
 <div class="layout" >
     <mat-tab-group mat-align-tabs="center" #tabGroup>
@@ -7,8 +7,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">STATUS</span>
+                <div >
+                    <span >{{Headers?.status}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->
@@ -20,8 +20,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">TASK TYPE</span>
+                <div>
+                    <span>{{Headers?.task_type}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->
@@ -33,8 +33,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">DEFECT TYPE</span>
+                <div >
+                    <span >{{Headers?.defect_type}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->
@@ -46,8 +46,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">SDLC</span>
+                <div >
+                    <span >{{Headers?.sdlc}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->
@@ -59,8 +59,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">STAGE</span>
+                <div >
+                    <span >{{Headers?.stage}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->
@@ -72,8 +72,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">SOURCE</span>
+                <div >
+                    <span >{{Headers?.source}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->
@@ -85,8 +85,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">COMPLEXITY</span>
+                <div >
+                    <span >{{Headers?.complexity}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->
@@ -98,8 +98,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">PRIORITY</span>
+                <div >
+                    <span >{{Headers?.priority}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->

@@ -1,5 +1,5 @@
 <div class="header" >
-    USER MANAGEMENT
+    {{headers?.Header}}
 </div>
 <div class="layout" >
     <mat-tab-group mat-align-tabs="center" #tabGroup>
@@ -7,8 +7,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">DEPARTMENT</span>
+                <div >
+                    <span >{{headers?.dep}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->
@@ -20,8 +20,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">DESIGNATION</span>
+                <div >
+                    <span >{{headers?.desg}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->
@@ -33,8 +33,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">USER</span>
+                <div >
+                    <span >{{headers?.user}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->

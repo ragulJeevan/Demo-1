@@ -1,5 +1,5 @@
 <div class="header" >
-    CORE
+    {{Headers?.header}}
 </div>
 <div class="layout" >
     <mat-tab-group mat-align-tabs="center" #tabGroup>
@@ -7,8 +7,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">PROJECT/PRODUCT</span>
+                <div >
+                    <span > {{Headers?.product}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->
@@ -20,8 +20,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">SOLUTION</span>
+                <div >
+                    <span > {{Headers?.solution}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->
@@ -33,8 +33,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">FEATURE</span>
+                <div >
+                    <span > {{Headers?.feature}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->
@@ -46,8 +46,8 @@
         <mat-tab>
             <!-- TAB HEADER  -->
             <ng-template mat-tab-label>
-                <div class="pas-flex-column-direction">
-                    <span class="pas-p40-ovrvw-tabheading-clr">USECASE</span>
+                <div >
+                    <span > {{Headers?.usecase}}</span>
                 </div>
             </ng-template>
             <!-- TAB CONTENT  -->

@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DateChangePipe } from '../pipes/date-change.pipe';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    DateChangePipe
+  ],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class SharedModule { }
