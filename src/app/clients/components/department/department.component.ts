@@ -28,7 +28,7 @@ export class DepartmentComponent implements OnInit,OnDestroy{
   ngOnInit(): void {
     this.addEditForm = new FormGroup({
       model_name: new FormControl('', Validators.required),
-    })
+    });
   } 
   // 
   ngOnDestroy(): void {
@@ -48,5 +48,9 @@ export class DepartmentComponent implements OnInit,OnDestroy{
     this.modalService.dismissAll();
   }
 
+  public getData(){
+    let url='department/departments/';
+    return  this.nativeService.get(url);
+  }
 
 }

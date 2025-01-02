@@ -1,8 +1,8 @@
 import { environment } from '../../environments/environment';
 let base_url = environment.base_url ;
-let core_url = `${base_url}/core` ;
-let client_url = `${base_url}/client` ;
-let foundation_url = `${base_url}/foundation` ;
+let core_url = `${base_url}/api_project_management` ;
+let client_url = `${base_url}/api_user_management` ;
+let foundation_url = `${base_url}/api_foundation` ;
 
 export const root = {
 // CORE     

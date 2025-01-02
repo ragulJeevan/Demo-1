@@ -17,16 +17,10 @@ export class ErrorInterceptorService {
 
   }
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    const alllowedUrl = '*'
     // this.commonService.setLoader(true);
     req = req.clone({
       setHeaders: {
-        // Authorization: 'Modular-X',
-        // Accept : 'All'
-        'Access-Control-Allow-Origin': alllowedUrl,
-        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
-        'Content-Type': ' application/json; charset=utf-8',
-        'Access-Control-Allow-Credentials': 'true'
+        Authorization: 'Modular-X',
       }
     });
     return next.handle(req)
